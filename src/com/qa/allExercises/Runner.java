@@ -1,4 +1,5 @@
 package com.qa.allExercises;
+import com.qa.encapsulationExercise.*;
 
 public class Runner {
     public static void main(String[] args) {
@@ -24,7 +25,7 @@ public class Runner {
         Coins.change(5.57, 20);
         Coins.change(15.43, 100);
         Coins.change(12.41, 20);
-        //Person Excercise
+        //Person Exercise
         Person p1 = new Person(6.2f, "John", 10, "Software Developer", 27);
         System.out.println(p1.greet());
         System.out.println(p1.shareDetails());
@@ -37,7 +38,14 @@ public class Runner {
         Person p4 = new Person(5.4f, "Karen");
         System.out.println(p4.greet());
         System.out.println(p4.shareDetails());
-        
+        //Encapsulation Exercise
+        Encapsulation encap = new Encapsulation();
+        encap.setStr("Hello");
+        encap.setInteger(10);
+        encap.setBigInteger(100000);
+        encap.setDecimal(2.2f);
+        encap.setBigDecimal(3.333333d);
+        System.out.println(encap.toString());
     }
     
 }
