@@ -1,5 +1,6 @@
-package com.qa.allExercises;
+package com.qa.javaBasics;
 import com.qa.encapsulationExercise.*;
+import com.qa.inheritance.*;
 
 public class Runner {
     public static void main(String[] args) {
@@ -26,16 +27,16 @@ public class Runner {
         Coins.change(15.43, 100);
         Coins.change(12.41, 20);
         //Person Exercise
-        Person p1 = new Person(6.2f, "John", 10, "Software Developer", 27);
+        Person1 p1 = new Person1(6.2f, "John", 10, "Software Developer", 27);
         System.out.println(p1.greet());
         System.out.println(p1.shareDetails());
-        Person p2 = new Person(5.8f, "David", 8, "Bus Driver", 32);
+        Person1 p2 = new Person1(5.8f, "David", 8, "Bus Driver", 32);
         System.out.println(p2.greet());
         System.out.println(p2.shareDetails());
-        Person p3 = new Person(5.6f, "Anna");
+        Person1 p3 = new Person1(5.6f, "Anna");
         System.out.println(p3.greet());
         System.out.println(p3.shareDetails());
-        Person p4 = new Person(5.4f, "Karen");
+        Person1 p4 = new Person1(5.4f, "Karen");
         System.out.println(p4.greet());
         System.out.println(p4.shareDetails());
         //Encapsulation Exercise
@@ -46,6 +47,11 @@ public class Runner {
         encap.setDecimal(2.2f);
         encap.setBigDecimal(3.333333d);
         System.out.println(encap.toString());
+        //Inheritance
+        Person jack = new Banker("Jack", 20, "HSBC");
+        Person david = new Farmer("David", 33, "Smithills Open Farm");
+        System.out.println(jack.sleep());
+        System.out.println(david.sleep());
     }
     
 }

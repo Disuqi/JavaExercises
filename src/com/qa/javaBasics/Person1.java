@@ -1,13 +1,13 @@
-package com.qa.allExercises;
+package com.qa.javaBasics;
 
-public class Person {
+public class Person1 {
     private float height;
     private String name;
     private int shoeSize;
     private String jobTitle;
     private int age;
 
-    public Person(float height, String name, int shoeSize, String jobTitle, int age){
+    public Person1(float height, String name, int shoeSize, String jobTitle, int age){
         this.height = height;
         this.name = name;
         this.shoeSize = shoeSize;
@@ -15,7 +15,7 @@ public class Person {
         this.age = age;
     }
 
-    public Person(float height, String name){
+    public Person1(float height, String name){
         this.name = name;
         this.height = height;
     }

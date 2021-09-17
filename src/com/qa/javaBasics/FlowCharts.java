@@ -1,4 +1,4 @@
-package com.qa.allExercises;
+package com.qa.javaBasics;
 
 public class FlowCharts {
 
