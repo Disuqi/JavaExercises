@@ -52,6 +52,9 @@ public class Runner {
         Person david = new Farmer("David", 33, "Smithills Open Farm");
         System.out.println(jack.sleep());
         System.out.println(david.sleep());
+        //MathsChallenge
+        Calculator cal = new Calculator();
+        System.out.println(cal.sumOfDivisors(9));
     }
     
 }

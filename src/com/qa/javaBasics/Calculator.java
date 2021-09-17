@@ -1,6 +1,6 @@
 package com.qa.javaBasics;
 
-public class Calculator {
+public class Calculator implements MathsChallenge {
 
 	public static double result;
 
@@ -37,6 +37,17 @@ public class Calculator {
 
 		}
 
+	}
+
+	@Override
+	public int sumOfDivisors(int input){
+		int result = 0;
+		for(int i = 1; i <= input; i++){
+			if(input%i == 0){
+				result += i;
+			}
+		}
+		return  result;
 	}
 }
     
